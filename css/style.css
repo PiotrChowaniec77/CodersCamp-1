@@ -1,0 +1,107 @@
+:root {
+    --color-orange: #ffc53d;
+    --color-white: #fff;
+    --color-grey: #fafaff;
+    --gradient-orange: linear-gradient(
+        90deg,
+        rgba(255, 197, 61, 1) 0%,
+        rgba(255, 154, 61, 1) 100%
+    );
+    font-size: 62.5%;
+    font-family: "Raleway", sans-serif;
+}
+body,
+.btn {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 3.2rem;
+}
+
+.btn {
+    height: 50px;
+    border-radius: 20px;
+    background: var(--gradient-orange);
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    padding: 0 40px;
+    margin: 0 20px;
+}
+
+.nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-white);
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+.nav img {
+    height: 25px;
+    width: 25px;
+}
+
+.nav__left,
+.nav__right,
+.nav span,
+.nav--wrapper li {
+    margin: 0px 20px;
+}
+.nav__left,
+.nav--wrapper {
+    display: flex;
+}
+
+.header {
+    height: 70vh;
+    background: url(../assets/Header.jpg), url(../assets/HederMask.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-blend-mode: lighten;
+}
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.header__title {
+    color: var(--color-orange);
+    font-size: 10rem;
+}
+
+.header span {
+    font-size: 3.6rem;
+    color: var(--color-white);
+}
+.hello__title {
+    margin: 20px 0;
+    font-size: 3.6rem;
+    text-align: center;
+}
+
+.hello__wrapper--btn {
+    display: flex;
+    justify-content: center;
+}
+
+.hello .btn:hover {
+    color: var(--color-orange);
+    background: var(--color-white);
+    border: 2px solid var(--color-orange);
+}
+.aboutMe__mask {
+    background-color: var(--color-grey);
+    margin-right: 400px;
+}
+
+.aboutMe__wrapper {
+    margin-right: -400px;
+    overflow: hidden;
+}
