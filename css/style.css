@@ -75,16 +75,20 @@ h3 {
 .header__title {
     color: var(--color-orange);
     font-size: 10rem;
+    margin: 20px 0;
+    font-size: 3.6rem;
+    text-align: center;
 }
 
 .header span {
     font-size: 3.6rem;
     color: var(--color-white);
 }
+
 .hello__title {
-    margin: 20px 0;
     font-size: 3.6rem;
     text-align: center;
+    margin: 20px auto;
 }
 
 .hello__wrapper--btn {
@@ -102,7 +106,7 @@ h3 {
 .skills {
     background-color: var(--color-grey);
     padding: 20px 50px;
-}   
+}
 .aboutMe__title,
 .skills__title {
     margin-bottom: 20px;
@@ -114,7 +118,7 @@ h3 {
     display: flex;
     margin: 0 50px;
     padding: 30px;
-    background-color:var(--color-white);
+    background-color: var(--color-white);
     justify-content: space-between;
 }
 
@@ -129,9 +133,9 @@ h3 {
     min-width: 250px;
     line-height: 35px;
     margin-right: 30px;
-    border-right:5px var(--color-orange) dotted ;
+    border-right: 5px var(--color-orange) dotted;
 }
-.aboutMe__bio span{
+.aboutMe__bio span {
     color: var(--color-orange);
 }
 .aboutMe__text {
@@ -145,15 +149,15 @@ h3 {
     display: flex;
     margin: 10px auto;
 }
-.skills__text{
+.skills__text {
     text-align: center;
 }
-.skills__text span{
+.skills__text span {
     color: var(--color-orange);
 }
 .skills__image:nth-child(2) {
-    border-right:5px var(--color-orange) dotted;
-    border-left:5px var(--color-orange) dotted;
+    border-right: 5px var(--color-orange) dotted;
+    border-left: 5px var(--color-orange) dotted;
 }
 .portfolio__title {
     margin: 20px 0;
@@ -161,7 +165,7 @@ h3 {
 }
 
 .portfolio__wrapper {
-    margin: 0 50px;
+    margin: 20px 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -175,11 +179,9 @@ h3 {
     width: 100%;
 }
 .portfolio__image:nth-child(odd) {
-
     flex-grow: 2;
 }
 .portfolio__image:nth-child(even) {
-
     flex-grow: 3;
 }
 .portfolio__text,
@@ -213,12 +215,73 @@ h3 {
     background: var(--color-white);
 }
 
-.portfolio__image:hover .portfolio__mask
-{
+.portfolio__image:hover .portfolio__mask {
     opacity: 0.7;
     transition: opacity 1s;
 }
 .portfolio__image:hover .portfolio__text {
     opacity: 1;
     transition: opacity 1s;
+}
+.contact {
+    background-color: var(--color-grey);
+    padding-bottom: 50px;
+}
+
+.contact__title {
+    padding-top: 20px;
+    margin-left: 50px;
+}
+
+.contact__wrapper {
+    min-height: 500px;
+    display: flex;
+}
+.contact__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 20px;
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 50px;
+    background: #ff9a3d;
+    color: var(--color-white);
+}
+
+.contact__left--text {
+    width: 300px;
+    margin-top: 20px;
+}
+.contact__left--adress {
+    bottom: 20px;
+}
+.contact__right {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.contact__form {
+    margin-top: 20px;
+}
+
+.contact__form--input,
+.contact__form--message {
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+.contact__form--input {
+    height: 30px;
+}
+
+.footer {
+    text-align: center;
+    color: #a0a0a0;
+    margin: 10px auto;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
 }
