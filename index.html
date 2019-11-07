@@ -7,23 +7,25 @@
         <title>CodersCamp 1</title>
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css">
         <link
             href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu&display=swap&subset=latin-ext"
             rel="stylesheet"
         />
     </head>
     <body>
+
         <nav class="nav">
             <div class="nav__left">
                 <img src="./assets/Dev_icon.svg" alt="dev icon" />
                 <span>Dev</span>
             </div>
             <div class="nav__right">
-                <ul class="nav--wrapper">
-                    <li>About Me</li>
-                    <li>Skills</li>
-                    <li>Portfolio</li>
-                    <li>Contact</li>
+                <ul class="nav__right--wrapper">
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -31,7 +33,6 @@
             <div class="header__wrapper">
                 <h1 class="header__title">Welcome!</h1>
                 <span>My name is Designer</span>
-                <div class="header__iconWrapper"></div>
             </div>
         </header>
         <section class="hello">
@@ -43,7 +44,7 @@
                 <button class="btn hello__CV">Check my CV</button>
             </div>
         </section>
-        <section class="aboutMe">
+        <section class="aboutMe" id="aboutMe">
             <h3 class="aboutMe__title">About Me</h3>
             <div class="aboutMe__wrapper">
                 <img
@@ -71,7 +72,7 @@
                 </p>
             </div>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <h3 class="skills__title">Skills</h3>
             <div class="skills__wrapper">
                 <figure class="skills__image">
@@ -100,7 +101,7 @@
                 </figure>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <h3 class="portfolio__title">Portfolio</h3>
             <div class="portfolio__wrapper">
                 <figure class="portfolio__image portfolio-1">
@@ -180,7 +181,7 @@
                 </figure>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <h3 class="contact__title">Contact us</h3>
             <div class="contact__wrapper">
                 <div class="contact__left">
@@ -189,7 +190,6 @@
                         Please describe your question. Send me a message and I
                         will answer you as soon as possible!
                     </div>
-                    <div class="contact__left--wrapper__social"></div>
                     <div class="contact__left--adress">
                         Designer
                         <br>
@@ -215,5 +215,6 @@
             </div>
         </section>
         <footer class="footer">Copyrights © 2019 CodersCrew</footer>
+    <script src="js/main.js"></script>
     </body>
 </html>

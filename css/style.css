@@ -31,6 +31,7 @@ h3 {
 }
 
 .nav {
+    position: absolute;
     position: sticky;
     top: 0;
     background-color: var(--color-white);
@@ -49,12 +50,23 @@ h3 {
 .nav__left,
 .nav__right,
 .nav span,
-.nav--wrapper li {
+.nav__right--wrapper li {
     margin: 0px 20px;
 }
 .nav__left,
-.nav--wrapper {
+.nav__right--wrapper {
     display: flex;
+}
+
+.nav__right--wrapper li a {
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav__right--wrapper li a:visited {
+    color: black;
+}
+.nav__right--wrapper li a:hover {
+    color: var(--color-orange);
 }
 
 .header {
@@ -63,20 +75,20 @@ h3 {
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
     background-blend-mode: lighten;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .header__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 50vh;
 }
 
 .header__title {
     color: var(--color-orange);
     font-size: 10rem;
     margin: 20px 0;
-    font-size: 3.6rem;
     text-align: center;
 }
 
@@ -94,6 +106,7 @@ h3 {
 .hello__wrapper--btn {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .hello .btn:hover {
@@ -123,8 +136,8 @@ h3 {
 }
 
 .aboutMe__foto {
-    width: 150px;
-    height: 150px;
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
     margin-right: 30px;
 }
@@ -234,16 +247,16 @@ h3 {
 }
 
 .contact__wrapper {
-    min-height: 500px;
+    min-height: 400px;
     display: flex;
 }
 .contact__left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex-grow: 1;
     justify-content: space-evenly;
     padding: 20px;
-    width: 40%;
     margin-top: 20px;
     margin-left: 50px;
     background: #ff9a3d;
@@ -253,29 +266,41 @@ h3 {
 .contact__left--text {
     width: 300px;
     margin-top: 20px;
+    line-height: 25px;
 }
 .contact__left--adress {
     bottom: 20px;
+    line-height: 25px;
 }
 .contact__right {
     margin-top: 40px;
     margin-left: 20px;
+    flex-grow: 3;
 }
 
 .contact__form {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 95%;
 }
 
 .contact__form--input,
 .contact__form--message {
-    width: 90%;
     margin-top: 20px;
     border-radius: 15px;
     padding-left: 10px;
+    width: 100%;
 }
 
 .contact__form--input {
     height: 30px;
+}
+
+.contact__form--submit {
+    align-self: flex-end;
+    margin: 20px 0;
 }
 
 .footer {

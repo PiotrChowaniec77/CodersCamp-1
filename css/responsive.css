@@ -1,0 +1,96 @@
+@media (orientation: portrait) {
+    .header {
+        height: 40vh;
+    }
+}
+@media (max-width: 1024px) {
+    .aboutMe,
+    .skills {
+        padding: 20px 0px;
+    }
+    .aboutMe__wrapper,
+    .skills__wrapper {
+        margin: 0;
+    }
+}
+@media (max-width: 763px) {
+    .aboutMe__wrapper,
+    .skills__wrapper,
+    .contact__wrapper {
+        flex-direction: column;
+    }
+    .aboutMe__wrapper {
+        text-align: center;
+    }
+    .aboutMe__foto {
+        margin: 20px auto;
+    }
+    .aboutMe__bio {
+        border-right: none;
+        border-top: 5px var(--color-orange) dotted;
+        border-bottom: 5px var(--color-orange) dotted;
+    }
+    .aboutMe__bio,
+    .aboutMe__text {
+        padding: 20px 0;
+    }
+    .skills__wrapper {
+        align-items: center;
+    }
+    .skills__image {
+        width: 100%;
+        padding: 20px 0;
+    }
+    .skills__image:nth-child(2) {
+        border-top: 5px var(--color-orange) dotted;
+        border-bottom: 5px var(--color-orange) dotted;
+        border-right: none;
+        border-left: none;
+    }
+    .portfolio__wrapper {
+        margin: 20px 0;
+    }
+    .contact__left {
+        margin-left: 0;
+    }
+    .contact__left--text {
+        width: auto;
+        margin: 20px 0;
+    }
+    .nav {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .nav__left {
+        margin: 15px;
+    }
+    .nav__right {
+        align-self: center;
+    }
+    .nav__right--wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav__right--wrapper li {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 520px) {
+    .header__title {
+        font-size: 5rem;
+    }
+    .header span,
+    .hello__title {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 400px) {
+    .hello__wrapper--btn {
+        flex-direction: column;
+        align-items: center;
+    }
+}
