@@ -69,6 +69,7 @@
     }
     .nav__right {
         align-self: center;
+        display: none;
     }
     .nav__right--wrapper {
         flex-direction: column;
