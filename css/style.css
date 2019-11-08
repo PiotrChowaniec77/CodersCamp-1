@@ -71,6 +71,7 @@ h3 {
 .navigation__item a {
     cursor: pointer;
     text-decoration: none;
+    color: black;
 }
 .navigation__item a:visited {
     color: black;
