@@ -14,9 +14,55 @@
     }
 }
 @media (max-width: 763px) {
+    .hamburger {
+        display: inline-block;
+    }
+
+    .nav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+    .hamburger,
+    .navigation {
+        -webkit-transition: -webkit-transform 0.3s 0.1s ease-in-out;
+        transition: -webkit-transform 0.3s 0.1s ease-in-out;
+        transition: transform 0.3s 0.1s ease-in-out;
+        transition: transform 0.3s 0.1s ease-in-out,
+            -webkit-transform 0.3s 0.1s ease-in-out;
+    }
+
+    .navigation {
+        height: 100vh;
+        width: 250px;
+        position: absolute;
+        margin: 50px 0 0 0;
+        top: 0;
+        left: 0;
+        background-color: var(--color-white);
+        -webkit-transform: translateX(-250px);
+        transform: translateX(-250px);
+    }
+
+    .navigation__item {
+        margin-bottom: 20px;
+    }
+    .nav--active {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+
+    .navigation__list {
+        display: inline-block;
+    }
+
     .aboutMe__wrapper,
     .skills__wrapper,
     .contact__wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
     .aboutMe__wrapper {
@@ -35,6 +81,8 @@
         padding: 20px 0;
     }
     .skills__wrapper {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
     .skills__image {
@@ -47,36 +95,13 @@
         border-right: none;
         border-left: none;
     }
-    .portfolio__wrapper {
-        margin: 20px 0;
-    }
+
     .contact__left {
         margin-left: 0;
     }
     .contact__left--text {
         width: auto;
         margin: 20px 0;
-    }
-    .nav {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
-
-    .nav__left {
-        margin: 15px;
-    }
-    .nav__right {
-        align-self: center;
-        display: none;
-    }
-    .nav__right--wrapper {
-        flex-direction: column;
-        text-align: center;
-    }
-    .nav__right--wrapper li {
-        margin: 15px 0;
     }
 }
 
@@ -88,10 +113,18 @@
     .hello__title {
         font-size: 2.5rem;
     }
+    .portfolio__wrapper {
+        margin: 20px 0;
+    }
 }
 @media (max-width: 400px) {
     .hello__wrapper--btn {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 }

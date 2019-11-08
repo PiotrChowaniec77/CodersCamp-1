@@ -7,27 +7,32 @@
         <title>CodersCamp 1</title>
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/responsive.css" />
         <link
             href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu&display=swap&subset=latin-ext"
             rel="stylesheet"
         />
     </head>
     <body>
-
         <nav class="nav">
-            <div class="nav__left">
+            <div class="navigation__icon--wrapper">
                 <img src="./assets/Dev_icon.svg" alt="dev icon" />
                 <span>Dev</span>
             </div>
-            <div class="nav__right">
-                <ul class="nav__right--wrapper">
-                    <li><a href="#aboutMe">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <button class="hamburger">
+                    <span class="hamburger__box">
+                            <span class="hamburger__inner"></span>
+                    </span>
+                </button>
+            <div class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a class="scroll" href="#aboutMe">About Me</a></li>
+                    <li class="navigation__item"><a class="scroll" href="#skills">Skills</a></li>
+                    <li class="navigation__item"><a class="scroll" href="#portfolio">Portfolio</a></li>
+                    <li class="navigation__item"><a class="scroll" href="#contact">Contact</a></li>
                 </ul>
             </div>
+
         </nav>
         <header class="header">
             <div class="header__wrapper">
@@ -185,36 +190,66 @@
             <h3 class="contact__title">Contact us</h3>
             <div class="contact__wrapper">
                 <div class="contact__left">
-                    <img src="assets/Group (1).svg" class="contact__left--letter" alt="letter icon">
+                    <img
+                        src="assets/Group (1).svg"
+                        class="contact__left--letter"
+                        alt="letter icon"
+                    />
                     <div class="contact__left--text">
                         Please describe your question. Send me a message and I
                         will answer you as soon as possible!
                     </div>
                     <div class="contact__left--adress">
                         Designer
-                        <br>
+                        <br />
                         Poland, Wrocław
-                        <br>
+                        <br />
                         ul.Tęczowa 12/3 50-000
-                        <br>
+                        <br />
                         +48 123-456-789
-                        <br>
+                        <br />
                         night-coding@dev.com
                     </div>
                 </div>
                 <div class="contact__right">
                     <h3 class="contact__form--title">Let's start!</h3>
                     <form class="contact__form" id="myform" action="">
-                        <input class="contact__form--input"type="text" name="name" id="name" placeholder="Name">
-                        <input class="contact__form--input"type="email" name="email" id="email" placeholder="Your e-mail adress">
-                        <input class="contact__form--input"type="text" name="topic" id="topic" placeholder="Topic">
-                        <textarea class="contact__form--message"name="message" id="message" cols="60" rows="6"></textarea>
-                        <button class="btn contact__form--submit" type="submit">Send</button>
+                        <input
+                            class="contact__form--input"
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Name"
+                        />
+                        <input
+                            class="contact__form--input"
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Your e-mail adress"
+                        />
+                        <input
+                            class="contact__form--input"
+                            type="text"
+                            name="topic"
+                            id="topic"
+                            placeholder="Topic"
+                        />
+                        <textarea
+                            class="contact__form--message"
+                            name="message"
+                            id="message"
+                            cols="60"
+                            rows="6"
+                        ></textarea>
+                        <button class="btn contact__form--submit" type="submit">
+                            Send
+                        </button>
                     </form>
                 </div>
             </div>
         </section>
         <footer class="footer">Copyrights © 2019 CodersCrew</footer>
-    <script src="js/main.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
